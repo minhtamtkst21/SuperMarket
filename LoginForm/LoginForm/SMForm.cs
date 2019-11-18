@@ -15,6 +15,7 @@ namespace LoginForm
         public SMForm()
         {
             InitializeComponent();
+            this.btnViewList
         }
     }
 }
