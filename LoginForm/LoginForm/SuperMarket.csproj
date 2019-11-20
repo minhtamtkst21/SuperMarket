@@ -67,6 +67,12 @@
     <Compile Include="SMForm.Designer.cs">
       <DependentUpon>SMForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewListForm.Designer.cs">
+      <DependentUpon>ViewListForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -81,6 +87,9 @@
     </Compile>
     <EmbeddedResource Include="SMForm.resx">
       <DependentUpon>SMForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewListForm.resx">
+      <DependentUpon>ViewListForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
