@@ -28,31 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.grdViewList = new System.Windows.Forms.DataGridView();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.addItemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addItemToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteItemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editItemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnAdd = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnDel = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnEdit = new System.Windows.Forms.ToolStripMenuItem();
             this.viewItemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aZToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.numberRemainToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.iDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnHome = new System.Windows.Forms.Button();
+            this.btnViewAZ = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnViewNumber = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnViewId = new System.Windows.Forms.ToolStripMenuItem();
             this.btnClose = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdViewList)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // grdViewList
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 28);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(284, 191);
-            this.dataGridView1.TabIndex = 2;
+            this.grdViewList.AllowUserToAddRows = false;
+            this.grdViewList.AllowUserToDeleteRows = false;
+            this.grdViewList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdViewList.Location = new System.Drawing.Point(0, 28);
+            this.grdViewList.Name = "grdViewList";
+            this.grdViewList.Size = new System.Drawing.Size(284, 191);
+            this.grdViewList.TabIndex = 2;
             // 
             // menuStrip1
             // 
@@ -68,67 +67,58 @@
             // addItemToolStripMenuItem
             // 
             this.addItemToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addItemToolStripMenuItem1,
-            this.deleteItemToolStripMenuItem,
-            this.editItemToolStripMenuItem});
+            this.btnAdd,
+            this.btnDel,
+            this.btnEdit});
             this.addItemToolStripMenuItem.Name = "addItemToolStripMenuItem";
             this.addItemToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.addItemToolStripMenuItem.Text = "Edit item";
             // 
-            // addItemToolStripMenuItem1
+            // btnAdd
             // 
-            this.addItemToolStripMenuItem1.Name = "addItemToolStripMenuItem1";
-            this.addItemToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.addItemToolStripMenuItem1.Text = "Add item";
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(152, 22);
+            this.btnAdd.Text = "Add item";
             // 
-            // deleteItemToolStripMenuItem
+            // btnDel
             // 
-            this.deleteItemToolStripMenuItem.Name = "deleteItemToolStripMenuItem";
-            this.deleteItemToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.deleteItemToolStripMenuItem.Text = "Delete item";
+            this.btnDel.Name = "btnDel";
+            this.btnDel.Size = new System.Drawing.Size(152, 22);
+            this.btnDel.Text = "Delete item";
             // 
-            // editItemToolStripMenuItem
+            // btnEdit
             // 
-            this.editItemToolStripMenuItem.Name = "editItemToolStripMenuItem";
-            this.editItemToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.editItemToolStripMenuItem.Text = "Edit item";
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(152, 22);
+            this.btnEdit.Text = "Edit item";
             // 
             // viewItemToolStripMenuItem
             // 
             this.viewItemToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aZToolStripMenuItem,
-            this.numberRemainToolStripMenuItem,
-            this.iDToolStripMenuItem});
+            this.btnViewAZ,
+            this.btnViewNumber,
+            this.btnViewId});
             this.viewItemToolStripMenuItem.Name = "viewItemToolStripMenuItem";
             this.viewItemToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.viewItemToolStripMenuItem.Text = "View item";
             // 
-            // aZToolStripMenuItem
+            // btnViewAZ
             // 
-            this.aZToolStripMenuItem.Name = "aZToolStripMenuItem";
-            this.aZToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
-            this.aZToolStripMenuItem.Text = "A-Z";
+            this.btnViewAZ.Name = "btnViewAZ";
+            this.btnViewAZ.Size = new System.Drawing.Size(158, 22);
+            this.btnViewAZ.Text = "A-Z";
             // 
-            // numberRemainToolStripMenuItem
+            // btnViewNumber
             // 
-            this.numberRemainToolStripMenuItem.Name = "numberRemainToolStripMenuItem";
-            this.numberRemainToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
-            this.numberRemainToolStripMenuItem.Text = "Number remain";
+            this.btnViewNumber.Name = "btnViewNumber";
+            this.btnViewNumber.Size = new System.Drawing.Size(158, 22);
+            this.btnViewNumber.Text = "Number remain";
             // 
-            // iDToolStripMenuItem
+            // btnViewId
             // 
-            this.iDToolStripMenuItem.Name = "iDToolStripMenuItem";
-            this.iDToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
-            this.iDToolStripMenuItem.Text = "ID";
-            // 
-            // btnHome
-            // 
-            this.btnHome.Location = new System.Drawing.Point(13, 226);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(75, 23);
-            this.btnHome.TabIndex = 4;
-            this.btnHome.Text = "Home";
-            this.btnHome.UseVisualStyleBackColor = true;
+            this.btnViewId.Name = "btnViewId";
+            this.btnViewId.Size = new System.Drawing.Size(158, 22);
+            this.btnViewId.Text = "ID";
             // 
             // btnClose
             // 
@@ -145,12 +135,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.btnHome);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.grdViewList);
             this.Controls.Add(this.menuStrip1);
             this.Name = "ViewListForm";
             this.Text = "ViewListForm";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdViewList)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -160,17 +149,16 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView grdViewList;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem addItemToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem addItemToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem deleteItemToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editItemToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem btnAdd;
+        private System.Windows.Forms.ToolStripMenuItem btnDel;
+        private System.Windows.Forms.ToolStripMenuItem btnEdit;
         private System.Windows.Forms.ToolStripMenuItem viewItemToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aZToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem numberRemainToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem iDToolStripMenuItem;
-        private System.Windows.Forms.Button btnHome;
+        private System.Windows.Forms.ToolStripMenuItem btnViewAZ;
+        private System.Windows.Forms.ToolStripMenuItem btnViewNumber;
+        private System.Windows.Forms.ToolStripMenuItem btnViewId;
         private System.Windows.Forms.Button btnClose;
     }
 }

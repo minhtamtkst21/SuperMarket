@@ -16,15 +16,55 @@ namespace LoginForm
         {
             InitializeComponent();
             this.btnClose.Click += btnClose_Click;
-            this.btnHome.Click += btnHome_Click;
+            this.Load += ViewListForm_Load;
+            this.btnAdd.Click += btnAdd_Click;
+            this.btnDel.Click += btnDel_Click;
+            this.btnEdit.Click += btnEdit_Click;
+            this.btnViewAZ.Click += btnViewAZ_Click;
+            this.btnViewNumber.Click += btnViewNumber_Click;
+            this.btnViewId.Click += btnViewId_Click;
+            this.grdViewList.DoubleClick += grdViewList_DoubleClick;
         }
 
-        void btnHome_Click(object sender, EventArgs e)
+        void grdViewList_DoubleClick(object sender, EventArgs e)
         {
-            var main = new SMForm();
-            main.ShowDialog();
+            throw new NotImplementedException();
         }
 
+        void btnViewId_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        void btnViewNumber_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        void btnViewAZ_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        void btnEdit_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        void btnDel_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        void btnAdd_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        void ViewListForm_Load(object sender, EventArgs e)
+        {
+            
+        }
         void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
